@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Header() {
+function Header({ title }) {
     return (
         <div className="App-header">
         <h1>
-          Amazon Cart
+          {title}
         </h1>
       </div>
     )
