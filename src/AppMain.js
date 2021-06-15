@@ -1,15 +1,13 @@
 import React from 'react'
+import CartItems from './CartItems.js'
+import CartTotal from './CartTotal.js'
 
 function AppMain() {
   return (
-    <div className="App-main">
-        <div className="CartItems">
-          <h1>Shopping Cart</h1>
-        </div>
-        <div className="CartTotal">
-
-        </div>
-      </div>
+    <div className="AppMain">
+        <CartItems />
+        <CartTotal />
+    </div>
   )
 }
 
