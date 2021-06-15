@@ -4,7 +4,7 @@ import CartTotal from './CartTotal.js'
 
 function AppMain() {
   return (
-    <div className="AppMain">
+    <div className="App-Main">
         <CartItems />
         <CartTotal />
     </div>
