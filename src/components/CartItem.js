@@ -1,10 +1,11 @@
 import React from 'react'
+import './CartItem.css'
 
 function CartItem() {
     return (
         <div className="CartItem">
             <div className="CartItem-image">
-                <img href='images/item-1.jpg' alt="iPad" width="180px" height="180px"></img>
+                <img href="" alt="iPad"></img>
             </div>
             <div className="CartItem-info">
                 <div className="info-title">
@@ -13,7 +14,6 @@ function CartItem() {
                     </h2>
                 </div>
                 <div className="info-stock">
-
                     In stock
                 </div>
                 <div className="info-actions">
