@@ -20,6 +20,9 @@
 }
 .item-actions {
   margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .item-delete {
   color: #007185;
@@ -32,4 +35,10 @@
   margin: 0;
   font-size: 18px;
   color: #007185;
+}
+select {
+  padding: 4px;
+  border-radius: 4px;
+  background-color: #f0f2f2;
+  box-shadow: ;
 }
