@@ -1,5 +1,7 @@
 .CartItem {
   display: flex;
+  padding-bottom: 10px 0 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .CartItem-image {
@@ -18,14 +20,22 @@
   font-size: 18px;
   font-weight: 700;
 }
+.divider {
+  color: #ddd;
+  font-weight: bold;
+}
 .item-actions {
   margin-top: 4px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .item-delete {
   color: #007185;
+  margin-left: 8px;
+}
+.item-delete:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 .info-stock {
   color: #007600;
@@ -40,5 +50,9 @@ select {
   padding: 4px;
   border-radius: 4px;
   background-color: #f0f2f2;
-  box-shadow: ;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 8px;
+}
+select:focus {
+  outline: none;
 }

@@ -27,7 +27,7 @@ function CartItem() {
                     </div>
                     <div className="divider">|</div>
                     <div className="item-delete">
-                        delete
+                        Delete
                     </div>
                 </div>
             </div>
