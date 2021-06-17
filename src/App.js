@@ -6,11 +6,11 @@ import data from './Data'
 
 function App() {
   const [ cartItems, setCartItems ] = useState(data);
- console.log(cartItems)
+
   return (
     <div className="App">
       <Header title="Amazon Cart" />
-      <AppMain />
+      <AppMain items={ cartItems }/>
     </div>
   );
 }
