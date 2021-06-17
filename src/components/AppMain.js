@@ -1,12 +1,14 @@
-import React from 'react'
-import CartItems from './CartItems.js'
-import CartTotal from './CartTotal.js'
+import React, { useState } from 'react'
+import CartItems from './CartItems'
+import CartTotal from './CartTotal'
+import data from '/Users/kathytavia/code/cdrmr18/react-amazon-cart/src/Data.js'
 
-function AppMain({ items }) {
+function AppMain() {
+  const [ cartItems, setCartItems ] = useState(data);
   
   return (
     <div className="App-Main">
-        <CartItems cartItems= { items}/>
+        <CartItems items= { cartItems }/>
         <CartTotal />
     </div>
   )
