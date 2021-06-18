@@ -1,7 +1,7 @@
 import React from 'react'
 import './CartItem.css'
 
-function CartItem({ title, stock, price, image }) {
+function CartItem({ title, stock, price, image, quantity }) {
     return (
         <div className="CartItem">
             <div className="CartItem-image">
@@ -19,7 +19,7 @@ function CartItem({ title, stock, price, image }) {
                 <div className="item-actions">
                     <div className="item-quantity
                 select">
-                    <select>
+                    <select value={quantity}>
                         <option value="1">Qty: 1</option>
                         <option value="2">Qty: 2</option>
                         <option value="3">Qty: 3</option>

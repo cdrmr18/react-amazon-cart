@@ -10,7 +10,7 @@ function CartItems({ items }) {
           <hr />
           <div className="CartItem-items">
             {items.map((item, index) => 
-                <CartItem title={item.title} image={item.image} stock={ item.stock} price={item.price} key={index}/>
+                <CartItem title={item.title} image={item.image} stock={ item.stock} price={item.price} quantity={item.quantity} key={index}/>
             )}
           </div>
         </div>
