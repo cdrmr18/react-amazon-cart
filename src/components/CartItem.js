@@ -1,20 +1,20 @@
 import React from 'react'
 import './CartItem.css'
 
-function CartItem() {
+function CartItem({ title, stock, price, image }) {
     return (
         <div className="CartItem">
             <div className="CartItem-image">
-                <img href="" alt="iPad"></img>
+                <img href={process.env.PUBLIC_URL + image} alt="iPad"></img>
             </div>
             <div className="CartItem-info">
                 <div className="info-title">
                     <h2>
-                        Ipad
+                        { title }
                     </h2>
                 </div>
                 <div className="info-stock">
-                    In stock
+                    {stock}
                 </div>
                 <div className="item-actions">
                     <div className="item-quantity
@@ -32,7 +32,7 @@ function CartItem() {
                 </div>
             </div>
             <div className="CartItem-price">
-                $80.00
+                ${price}
             </div>
         </div>
     )

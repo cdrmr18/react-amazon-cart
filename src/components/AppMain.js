@@ -8,7 +8,7 @@ function AppMain() {
   
   return (
     <div className="App-Main">
-        <CartItems items= { cartItems }/>
+        <CartItems items={ cartItems }/>
         <CartTotal />
     </div>
   )
