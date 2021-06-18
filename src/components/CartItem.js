@@ -5,7 +5,7 @@ function CartItem({ title, stock, price, image }) {
     return (
         <div className="CartItem">
             <div className="CartItem-image">
-                <img href={process.env.PUBLIC_URL + image} alt="iPad"></img>
+                <img src={process.env.PUBLIC_URL + '/items/' + image} alt="iPad"></img>
             </div>
             <div className="CartItem-info">
                 <div className="info-title">
