@@ -9,10 +9,17 @@ function CartTotal({ items }) {
     })
     return totalPrice;
   }
+  const getTotalItems = () => {
+    let totalItems = 0;
+    items.forEach((item) => {
+      totalItems += 1
+    })
+    return totalItems;
+  }
     return (
         <div className="CartTotal">
           <h3>
-            Subtotal(5 items):
+            Subtotal({ getTotalItems() } items):
             <span className="CartTotal-price">
               ${ getTotalPrice() }
             </span>
