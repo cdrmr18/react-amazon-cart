@@ -9,7 +9,7 @@ function AppMain() {
   return (
     <div className="App-Main">
         <CartItems items={ cartItems }/>
-        <CartTotal />
+        <CartTotal items={ cartItems }/>
     </div>
   )
 }
