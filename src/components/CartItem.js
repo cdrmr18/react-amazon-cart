@@ -1,28 +1,34 @@
 import React from 'react'
 import './CartItem.css'
 
-function CartItem({ title, stock, price, image, quantity }) {
+function CartItem({ index, item, updateItemQuantity }) {
     return (
         <div className="CartItem">
             <div className="CartItem-image">
-                <img src={process.env.PUBLIC_URL + '/items/' + image} alt="iPad"></img>
+                <img src={process.env.PUBLIC_URL + '/items/' + item.image} alt="iPad"></img>
             </div>
             <div className="CartItem-info">
                 <div className="info-title">
                     <h2>
-                        { title }
+                        { item.title }
                     </h2>
                 </div>
                 <div className="info-stock">
-                    {stock}
+                    {item.stock}
                 </div>
                 <div className="item-actions">
                     <div className="item-quantity
                 select">
-                    <select value={quantity}>
+                    <select value={item.quantity} onChange={(e) => updateItemQuantity(e, index)}>
                         <option value="1">Qty: 1</option>
                         <option value="2">Qty: 2</option>
                         <option value="3">Qty: 3</option>
+                        <option value="4">Qty: 4</option>
+                        <option value="5">Qty: 5</option>
+                        <option value="6">Qty: 6</option>
+                        <option value="7">Qty: 7</option>
+                        <option value="8">Qty: 8</option>
+                        <option value="9">Qty: 9</option>
                     </select>
                     </div>
                     <div className="divider">|</div>
@@ -32,7 +38,7 @@ function CartItem({ title, stock, price, image, quantity }) {
                 </div>
             </div>
             <div className="CartItem-price">
-                ${price}
+                ${item.price}
             </div>
         </div>
     )
