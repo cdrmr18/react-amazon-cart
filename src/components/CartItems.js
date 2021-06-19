@@ -2,10 +2,11 @@ import React from 'react'
 import './CartItems.css'
 import CartItem from './CartItem.js'
 
-function CartItems({ items }) {
+function CartItems({ items, setCartItems }) {
   const updateItemQuantity = (e, index) => {
-    items[index].quantity = parseInt(e.target.value);
-    console.log(items[index]);
+    const newItems = [...items];
+    newItems[index].quantity = parseInt(e.target.value);
+    setCartItems(newItems);
   }
     return (
         <div className="CartItems">
